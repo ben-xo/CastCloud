@@ -1,0 +1,11 @@
+CastCloud
+=========
+
+CastCloud reads an RSS feed and uploads new MP3s to SoundCloud.
+
+Made for MusicHackDay Amsterdam 24-April-2010.
+
+REMEMBER TO DO
+git submodule init
+git submodule update
+...to get the dependencies.
