@@ -1,0 +1,6 @@
+[submodule "php-soundcloud"]
+	path = php-soundcloud
+	url = git@github.com:ben-xo/php-soundcloud.git
+[submodule "SimplePie"]
+	path = SimplePie
+	url = http://github.com/rmccue/SimplePie.git
