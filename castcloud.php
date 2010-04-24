@@ -37,7 +37,7 @@ class CastCloud
         error_reporting(E_ALL & ~E_STRICT & ~E_DEPRECATED);
         date_default_timezone_set('UTC');
         
-        require_once('SimplePie/simplepie.inc');
+        require_once('SimplePie/simplepie.class.php');
         require_once('php-soundcloud/oauth.php');
         require_once('php-soundcloud/soundcloud.php');
         
@@ -203,7 +203,8 @@ class CastCloud
      */
     protected function getRSS($url)
     {
-        $feed = new SimplePie($url);
+        $feed = new SimplePie();
+        $feed->set_feed_url($url);
         $feed->init();
         return $feed;
     }
